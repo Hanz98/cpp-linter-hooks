@@ -11,3 +11,38 @@
   entry: clang-tidy-hook
   language: python
   files: \.(h\+\+|h|hh|hxx|hpp|c|cc|cpp|c\+\+|cxx)$
+
+- id: oclint
+  name: oclint
+  entry: oclint-hook
+  description: Find warnings/errors in C, C++, and Objective-C code
+  types_or: [c, c++, c#, objective-c]
+  language: python
+
+- id: uncrustify
+  name: uncrustify
+  entry: uncrustify-hook
+  description: Formats C, C++, Objective-C, Java, D, and Vala code
+  types_or: [c, c++, c#, objective-c, java]
+  language: python
+
+- id: cppcheck
+  name: cppcheck
+  entry: cppcheck-hook
+  description: Find warnings/errors in C, C++, and Objective-C code
+  types_or: [c, c++, c#, objective-c]
+  language: python
+
+- id: cpplint
+  name: cpplint
+  entry: cpplint-hook
+  description: Find warnings/errors in C/CPP code
+  types_or:  [c, c++, c#, objective-c, cuda]
+  language: python
+
+- id: include-what-you-use
+  name: include-what-you-use
+  entry: include-what-you-use-hook
+  description: Runs Include-What-You-Use (iwyu) in C/CPP code
+  types_or:  [c, c++, c#, objective-c, cuda]
+  language: python
